@@ -1,7 +1,12 @@
 MongoDB Installation methods 
 1. package Manger installation
-2. Repository installation
-3. tarbal (manual) installation
-4. Docker installation
+1.1repositiory installation by using production
+2. Repository installation (.rpm files)
+3. tarbal (manual) installation(binary installation) like by use tar
+4. Docker installation /container installation
 5.cloud installation(MongoDB Atlas)
-windows MSI installation
+6.windows MSI installation
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Package Manager Installation
+1.1 first check the operation system of kernel -> cat /etc/os-release| cat /etc/redhat-release ->(to check the os version)
+Reason:- Mongodb repository URL depends on the OS version.
