@@ -10,3 +10,20 @@ MongoDB Installation methods
 1. Package Manager Installation
 1.1 first check the operation system of kernel -> cat /etc/os-release| cat /etc/redhat-release ->(to check the os version)
 Reason:- Mongodb repository URL depends on the OS version.
+1.2 create MongoDB repository file and add Official repo
+vi /etc/yum.repo.d/mongodb-org-8.0 -> assume the file name 
+[mongodb-org-8.0] ----> version of mongod.service(mongodb)| This is the repository ID (repo name).
+name=MongoDB Repository  ---> Thiss is the human readable of repository
+baseurl=https://repo.mongodb.org/yum/redhat/9/mongodb-org/8.0/x86_64/  ---->this is the url of offical site of mongodb 
+gpgcheck=1
+enabled=1
+gpgkey=https://pgp.mongodb.com/server-7.0.asc
+explaintion of this url for our understand:- https://repo.mongodb.org/yum/redhat/9/mongodb-org/8.0/x86_64/
+https:- secure protocol
+repo.mongodb.org:- offical mongodb repository server
+yum :- repository format of yum/dnf
+redhat :- operating system type
+9 :- version of rhel
+mongodb-org :- mongodb community packages
+8.0 :- mongodb version
+x86_64 :- CPU architecture
