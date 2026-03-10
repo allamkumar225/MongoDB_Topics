@@ -42,9 +42,34 @@ this will do first search repo file and download the RPM package then verify GPG
 1.5 systemctl start mongod.service :---> start the service
 
 1.6 systemctl enable mongod.service :----> enable the service
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+unistall of package manager method
+---------------------------------
+Stop MongoDB
+      ↓
+Remove MongoDB packages
+      ↓
+Delete data directory
+      ↓
+Delete logs
+      ↓
+Delete config file
+      ↓
+Remove repo file
+      ↓
+Clean DNF cache
 
+1.1  stop the service of mongodb -> systemctl stop mongod.service
 
+1.2  check this service and it is enable means do disable why beacuse it will automatically start the service--> systemctl disable mongod.service
 
+1.3  to remove the all mongodb packages ---> dnf remove mongodb-org*
+
+1.4  to delete the data directory the path of data directory is :-- /var/lib/mongo
+1.5 to remove logs we have path :-(/var/log/mongodb/mongod.log) 
+1.6 to delete configration file :- /etc/mongod.conf
+1.7 to remove repo file and the file location inside the system configration file:-- /etc/yum.repo.d/mongodb-org-8.0  | dnf repolist
+1.8 to clean all domain name system file :- yum clean all
 
 
 
