@@ -1,0 +1,13 @@
+Instance (mongod process)
+   ↓
+Deployment (Standalone / Replica Set / Sharded Cluster)
+   ↓
+Database
+   ↓
+Collection
+   ↓
+Document (BSON)
+
+standalone -> only single mongod instance without duplicate node
+Replica Set -> mirror data but create multiple how many we want for HIGH AVAILABILITY(same data in every Node)
+Sharded Cluster -> multip shard for data distribute
