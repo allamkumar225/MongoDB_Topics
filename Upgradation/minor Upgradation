@@ -1,1 +1,24 @@
+Minor upgaradation:- 
 
+minor upgardation in mongodb it will upgrade the new version within the minor version 
+-> to upgrade mainly for
+** bug fixes
+** performance improvement
+** security patches
+** small features enhancement
+
+
+**  for upgardtion is must required downtime but it take less time to upgarde ** that to application also should stop **
+step-1:- check the version of mongodb 
+    db.version()
+    mongod --version
+step-2:- before upgardation must take the backup of database
+mongodump --out /path/to/....
+step-3:- stop the service
+systemctl status mongod | ps -ef | grep mongod
+systemctl stop mongod 
+step-4:- update the packages
+yum update mongodb-org
+step-5:- start the service 
+systemctl start mongod 
+step-6:- check the version
