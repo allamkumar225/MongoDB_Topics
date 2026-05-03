@@ -7,6 +7,12 @@ minor upgardation in mongodb it will upgrade the new version within the minor ve
 ** security patches
 ** small features enhancement
 
+to check the packages /rpm file by using :- rpm -qa | grep mongod
+mongodb-org-7.0.8
+mongodb-org-server-7.0.8
+mongodb-org-shell-7.0.8
+mongodb-org-mongos-7.0.8
+mongodb-org-tools-7.0.8
 
 **  for upgardtion is must required downtime but it take less time to upgarde ** that to application also should stop **
 step-1:- check the version of mongodb 
