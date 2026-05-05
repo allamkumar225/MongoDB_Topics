@@ -1,0 +1,39 @@
+logical
+physical 
+snapshot
+oplog
+cloud
+
+6. Enterprise / Managed Tools
+📦 Tools:
+MongoDB Ops Manager
+MongoDB Cloud Manager
+MongoDB Atlas
+
+ Percona Backup for MongoDB
+.✔️ Features:
+Full + incremental backups
+Point-in-time recovery (PITR)
+Works with replica sets & sharded clusters
+✔️ Why it's powerful:
+Enterprise-level features (but free)
+Better than mongodump for production
+✔️ Use case:
+Production systems
+Large databases
+Need autmation + consistency
+===================================================================================================================
+logical backup(mongodump/mongorestore):-
+
+full instance backup
+database level backup
+collection level backup
+document level backup
+schema backup 
+index backup
+Oplog-based Logical Backup(Consistent)
+Archive Backup(single file)
+Compressed Backup
+Incremental Logical Backup (Indirect)
+Export-Based Backup (JSON/CSV)
+Selective Namespace B
