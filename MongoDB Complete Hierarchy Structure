@@ -1,0 +1,44 @@
+MongoDB Server
+│
+├── Database
+│     │
+│     ├── Collection
+│     │      │
+│     │      ├── Document
+│     │      │      │
+│     │      │      ├── Field (Key : Value)
+│     │      │      │      │
+│     │      │      │      ├── BSON Data Types
+│     │      │      │      │      ├── String
+│     │      │      │      │      ├── Integer
+│     │      │      │      │      ├── Boolean
+│     │      │      │      │      ├── Array
+│     │      │      │      │      ├── Object
+│     │      │      │      │      ├── Date
+│     │      │      │      │      └── ObjectId
+│     │      │      │
+│     │      │      ├── Embedded Documents
+│     │      │      └── Arrays
+│     │      │
+│     │      ├── Indexes
+│     │      ├── Views
+│     │      ├── Validation Rules
+│     │      └── Aggregation Pipelines
+│     │
+│     ├── Users
+│     ├── Roles
+│     ├── Functions
+│     └── Transactions
+│
+├── Replica Set
+│     ├── Primary
+│     ├── Secondary
+│     └── Arbiter
+│
+├── Sharding
+│     ├── Shard
+│     ├── Config Server
+│     └── Mongos Router
+│
+└── Storage Engine
+      └── WiredTiger
