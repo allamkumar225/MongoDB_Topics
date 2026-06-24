@@ -1,0 +1,2 @@
+What is a Document Model?
+A Document Model is a way of storing data in the form of documents (objects). Each document contains multiple fields and values, and documents are stored in collections. MongoDB uses the document model to store data in BSON format.
