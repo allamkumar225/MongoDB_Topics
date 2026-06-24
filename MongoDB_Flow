@@ -11,3 +11,8 @@ Document (BSON)
 standalone -> only single mongod instance without duplicate node
 Replica Set -> mirror data but create multiple how many we want for HIGH AVAILABILITY(same data in every Node)
 Sharded Cluster -> multip shard for data distribute
+
+
+MongoDB_Structue:-
+
+Database -> collections -> documents --> feilds
